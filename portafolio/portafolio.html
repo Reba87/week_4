@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" href="RECURSOS/favicon.png">
+
+    <link rel="stylesheet" href="css-portafolio.css">
+</head>
+
+<body>
+    <main>
+
+        <section class="section1" id="home">
+            <section class="contenedor1">
+                <article class="card1">
+                    <div class="imagen">
+                        <img class="img" src="./RECURSOS/launch-page/izq.png">
+                        <img class="img2" src="./RECURSOS/launch-page/center.png">
+                        <img class="img3" src="./RECURSOS/launch-page/dere.png">
+                        <p class="titulo"> Hi, soy Rafa, Futuro <br /> Full Stack</p>
+                    </div>
+                </article>
+            </section>
+
+
+            <article class="card2">
+
+                <div class="div2">
+
+                    <nav class="menu">
+                        <a class="menu__enlaces" href="#home" >Home <i class="fa-solid fa-house"></i></a>
+                        <a class="menu__enlaces" href="#work"> Work <i class="fa-solid fa-briefcase"> </i></a>
+                        <a class="menu__enlaces" href="#contacto">Contacto <i class="fa-solid fa-envelope"></i></i></a>
+                        <form class="buscador" type="reset">
+                            <input onclick="filtro()" action="#" type="search" class="buscar" id="buscar"
+                                placeholder="   Buscar">
+                        </form>
+                    </nav>
+
+                </div>
+            </article>
+        </section>
+
+
+        <section class="section2" id="work">
+
+            <article class="card3">
+                <img class="yo" src="./RECURSOS/YO.png">
+                <div class="info">
+                    <p class="texto-info">Hola, soy Rafael Bravo. <br />
+                        Actualmente estoy estudiando un Bootcamp para convertirme en un pogramador
+                        junior Full-Stack, durante estos meses he aprendido diferentes lenguajes de programacione
+                        como son:
+                    </p>
+                </div>
+                <div class="lenguajes">
+                   <a href="https://github.com/Reba87/Week_2/blob/main/POO/personTest.js">
+                    <img class="img-leng" src="./RECURSOS/iconos-lenguajes/js.png" id="#java"> </a>
+
+                    <a href="https://github.com/Reba87/Week_2/blob/main/Typescript/library.ts">
+                    <img class="img-leng" src="./RECURSOS/iconos-lenguajes/typescript.png" id="types"> </a>
+
+                    <a href="https://jacekjeznach.com/">
+                    <img class="img-leng" src="./RECURSOS/iconos-lenguajes/html-5.png" id="html"></a>
+
+                    <a href="https://github.com/Reba87/Week_3/blob/main/maquetacion_basica/web_code/style_web_code.css">
+                    <img class="img-leng" src="./RECURSOS/iconos-lenguajes/css.png" id="css"></a>
+
+                    <a href="https://github.com/Reba87">
+                    <img class="img-leng" src="./RECURSOS/iconos-lenguajes/git.png" id="git"></a>
+                </div>
+            </article>
+
+        </section>
+
+
+        <section class="section3" id="contacto">
+                    <article class="contacto">
+                        <img class="sobre" src="./RECURSOS/sobre.png">
+
+                        <form class="contenedor4">
+                            <h1 class="contactame">  Te pones en contacto?</h1>
+                            <p class="good">(Buena elección)</p>
+                           <input type="text" class="name" id="name" placeholder="Nombre"></input>
+                           <input type="text" class="phone" id="phone" placeholder="Movil"></input>
+                           <input type="text" class="email" id="email" placeholder="Email"></input>
+                           <textarea type="text" class="mnsj" id="mnsj" placeholder="Mensaje"></textarea>
+                           <button onclick="captura()" class="boton" type="reset">Enviar mensaje</button>
+
+                        </form>
+                    </article>
+        </section>
+
+        <footer class="footer">
+            <p class="textfooter"> © 2022 By Erba87</p>
+            <a href=""><img class="redes" src="./RECURSOS/iconos redes/facebookpeque.png"></a>
+            <a href=""><img class="redes" src="./RECURSOS/iconos redes/linkedin.png"></a>
+            <a href=""><img class="redes" src="./RECURSOS/iconos redes/instagram.png"></a>
+        </footer>
+       
+
+    </main>
+    
+    <script src="script-portafolio.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&family=Roboto&display=swap');
+
+:root {
+    --primerafuente: 'Lobster Two', cursive;
+    --segundafuente: 'Roboto', sans-serif;
+    --primercolor: rgb(243, 243, 243)
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.body {
+    background: var(--primercolor);
+}
+
+.image {
+    width: 935px;
+    height: 650px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 50px 0px 0px 250px;
+}
+
+.iphone {
+    width: 453px;
+    height: 618px;
+}
+
+.imagen {
+    height: 100%;
+}
+
+.dialogo {
+    
+    background-color: white;
+    border: 1px solid var(--primercolor);
+    width: 453px;
+    height: 618px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: rgb(243, 243, 243);
+}
+
+.inicio {
+    border: 1px solid rgb(200, 200, 200);
+    width: 350px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+}
+
+.title {
+    font-family: var(--primerafuente);
+    font-size: 50px;
+    font-weight: normal;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.usuario {
+    margin-top: 30px;
+    width: 300px;
+    height: 36px;
+    background-color: var(--primercolor);
+    text-align: justify;
+    border: 1px solid rgb(170, 170, 170);
+    font-family: var(--segundafuente);
+}
+
+.contraseña {
+    margin-top: 10px;
+    width: 300px;
+    height: 36px;
+    background-color: var(--primercolor);
+    text-align: justify;
+    border: 1px solid rgb(170, 170, 170);
+    font-family: var(--segundafuente);
+}
+
+.inicio ::placeholder {
+    color: rgb(114, 114, 114);
+}
+
+.boton {
+    margin-top: 30px;
+    width: 300px;
+    height: 35px;
+    border-radius: 6px;
+    background: rgba(0, 162, 255, 0.527);
+    color: white;
+    font-size: 18px;
+    font-family: var(--segundafuente);
+    border: none;
+}
+.boton:hover{
+    background: rgb(0, 98, 255);
+}
+
+.separador {
+    margin-top: 10px;
+    font-size: 18px;
+    color: var(--firscolor);
+}
+
+.facebook {
+    margin-top: 20px;
+    width: 30px;
+}
+
+.alternativa {
+    text-decoration: none;
+    font-family: var(--segundafuente);
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(0, 0, 207)
+}
+
+.olvidado {
+    text-decoration: none;
+    margin-top: 15px;
+    text-align: center;
+    color: rgb(100, 100, 100);
+    font-family: var(--segundafuente);
+    font-size: 12px;
+}
+
+.nueva-cuenta {
+    border: 1px solid rgb(200, 200, 200);
+    width: 350px;
+    height: 65px;
+    margin-top: 15px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.text-nueva {
+    font-family: var(--segundafuente);
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.registro {
+    text-decoration: none;
+    color: rgb(0, 0, 207);
+    font-family: var(--segundafuente);
+    font-weight: bold;
+}
+
+.descarga {
+    width: 350px;
+    height: 102px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.aplicacion {
+    font-family: var(--segundafuente);
+    margin-left: 90px;
+
+}
+
+.descarga-app {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.apple {
+    max-height: 50px;
+}
+
+.google {
+    max-height: 70px;
+}
+
+.footer{
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 105px;
+    justify-content:center;
+    align-content: center;
+}
+
+.text-footer {
+    text-decoration: none;
+    margin-left: 10px;
+    font-family: var(--segundafuente);
+    color: rgb(148, 148, 148);
+    font-size:14px
+}
+.footer2{
+    display: flex;
+    flex-direction: row;
+    height: 20px;
+    justify-content:center;
+}
+.idoma{
+    border: none;
+}
+.copy{
+    font-family: var(--segundafuente);
+    color: rgb(148, 148, 148);
+    margin-left: 10px;
+}
+
+/* CSS media query */
+
+@media screen and (max-width:870px) {
+    .iphone{
+        display: none;
+    }
+    .footer{
+        width:auto;
+        display: inline-block;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:center;
+        align-items: center;
+        margin-left: 600px;
+
+    }
+    
+    .footer2{
+        width:auto; 
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width:440px){
+    .iphone{
+        display: none;
+    }
+    .inicio{
+        background-color: var(--primercolor);
+        border: none;
+    }
+    .nueva-cuenta{
+        background-color: var(--primercolor);
+        border: none;
+    }
+
+}
+@media screen and (max-width:260px) {
+
+    .descarga-app{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&family=Roboto&display=swap');
+
+:root {
+    --primerafuente: 'Lobster Two', cursive;
+    --segundafuente: 'Roboto', sans-serif;
+    --primercolor: rgb(243, 243, 243)
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.body {
+    background: var(--primercolor);
+}
+
+/*header*/
+.head {
+    width: 1500px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+    flex-wrap: nowrap;
+}
+
+.insta {
+    width: 103px;
+}
+
+.buscar {
+    border: none;
+    border-radius: 5px;
+    font-family: var(--segundafuente);
+    background-color: var(--primercolor);
+    height: 40px;
+    width: 268px;
+    font-size: 20px;
+}
+
+.boton {
+    width: 90px;
+    height: 35px;
+    border-radius: 6px;
+    background: rgb(0, 98, 255);
+    color: white;
+    font-size: 14px;
+    font-family: var(--segundafuente);
+    border: none;
+}
+
+.boton:hover {
+    background: rgb(0, 55, 143)
+}
+
+.registro {
+    text-decoration: none;
+    color: rgb(32, 73, 255);
+    font-family: var(--segundafuente);
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+/*contenedor padre*/
+.contenedor1 {
+    width: 975px;
+    height: 2099px;
+    margin-left: 200px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+}
+
+/*foto perfil*/
+.code-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+}
+
+/*infotmacion usuario*/
+.contenedor1-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 542px;
+    height: 263px;
+}
+
+.info-perfil {
+    width: 100%;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+}
+
+.name-usuario {
+    font-family: var(--segundafuente);
+    color: rgb(73, 73, 73);
+    font-weight: lighter;
+}
+
+.boton-us {
+    height: 31px;
+    width: 60px;
+    margin-left: 20px;
+    background: rgb(0, 98, 255);
+    color: white;
+    font-size: 14px;
+    font-family: var(--segundafuente);
+    border: none;
+    border-radius: 5px;
+}
+
+.info-usuario {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+.publicaciones {
+    text-decoration: none;
+    font-family: var(--segundafuente);
+    font-size: 18px;
+    color: rgb(73, 73, 73);
+    margin-left: 10px;
+}
+
+.lista {
+    width: 100%;
+    height: 168px;
+    margin-top: 10px;
+}
+
+.name {
+    font-family: var(--segundafuente);
+    color: rgb(27, 27, 27);
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.escuela {
+    font-family: var(--segundafuente);
+    color: rgb(73, 73, 73);
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.text-lista {
+    font-family: var(--segundafuente);
+    color: rgb(27, 27, 27);
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.redes {
+    text-decoration: none;
+    font-family: var(--segundafuente);
+    font-size: 16px;
+}
+
+/*iconos de reels*/
+.reels {
+    border: 1px solid red;
+    width: 935px;
+    height: 130px;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    align-items:flex-start;
+    justify-content: space-evenly;
+}
+
+.icono {
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.iconos {
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background-color: rgb(253, 253, 253);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.photo {
+    height: 80px;
+}
+
+/*guia publicaciones usuario*/
+.tablas {
+    border: 1px solid gray;
+    width: 935px;
+    height: 54px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.publication {
+    text-decoration: none;
+    font-family: var(--segundafuente);
+    color: rgb(88, 88, 88);
+    font-size: 18px;
+}
+
+/*galeria de imagenes*/
+.imagenes {
+    border: 1px solid red;
+    width: 935px;
+    height: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.galeria_img {
+
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+    margin-left: 10px;
+    object-fit:cover;
+}
+
+/* CSS media query */
+
+
+@media screen and (max-width:734px){
+    .head{
+        width: 800px;
+    }
+    .buscar{
+        width: auto;
+    }
+    .contenedor1{
+        width: 600px;
+        justify-content:flex-start;
+    }
+    .photo-perfil{
+        width: 100px;
+    }
+   
+    .reels{
+        width:460px;
+        height: 88px;
+        justify-content:space-evenly;
+        
+    }
+    .icono{
+        width:57px;
+        height: 57px;
+       
+    }
+    .iconos{
+        width:57px;
+        height: 57px;
+       
+    }
+    .photo{
+        height:45px;
+    }
+    .tablas{
+        width:460px;
+        margin-top: -5px;
+       
+    }
+    .publication{
+        font-size:12px
+    }
+    .imagenes{
+        width: 500px;
+    }
+    .galeria_img {
+
+        width: 150px;
+        height: 150px;
+        margin-left: 10px;
+        margin-top: 20px;
+        object-fit:cover;
+    }
+}
+@media screen and (max-width:640px){
+    .buscar{
+        display: none;
+    }
+}
